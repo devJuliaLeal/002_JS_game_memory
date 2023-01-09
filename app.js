@@ -57,7 +57,7 @@ function createBoard () {
       const card = document.createElement('img')
       card.setAttribute('src', 'documentos/img6-flower.jpg')
       card.setAttribute('data-id', i)
-      gridDisplay.appendChild(card)
+      gridDisplay.append(card)
     }
 }
 createBoard()
