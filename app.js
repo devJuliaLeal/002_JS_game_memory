@@ -1,4 +1,6 @@
+document.addEventListener('DOMContentLoaded', () => {
 const cardArray =[
+
     {
         name: 'img1-annya',
         img: 'img1-annya.jpg',
@@ -46,6 +48,7 @@ const cardArray =[
         name: 'img6-flower',
         img: 'img6-flower.jpg',
     }
+
 ]
 
 cardArray.sort(() => Math.random()) 
@@ -58,7 +61,7 @@ function createBoard () {
       const card = document.createElement('img')
       card.setAttribute('src', 'documentos/img6-flower.jpg')
       card.setAttribute('data-id', i)
-      card.addEventListener('click',flipCard )
+      card.addEventListener('click', flipCard )
       gridDisplay.append(card)
     }
 }
@@ -69,21 +72,21 @@ function checkMatch () {
 }
 
 function flipCard() {
+    let cardId = this.getAttribute('data-id')
+    cardsChosen.push(cardArray[cardId].name)
+    cardsChosenId.push(cardId)
+    this.setAttribute('src', cardArray[cardId].img)
+    if (cardsChosen.length ===2) {
+      setTimeout(checkForMatch, 500)
+    }
 
- this.getAtribute('data-id')
- cardsChosen.push(cardArray[cardId].name)
- this.setAttribute('src', cardArray[cardId].img)
-if (cardsChosen.length===2){
-    setTimeout(checkMatch, 500)
 }
 
-}
 
 
 
 
-
-
+ })
 
 
 
