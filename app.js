@@ -57,11 +57,15 @@ function createBoard () {
       const card = document.createElement('img')
       card.setAttribute('src', 'documentos/img6-flower.jpg')
       card.setAttribute('data-id', i)
+      card.addEventListener('click',flipCard )
       gridDisplay.append(card)
     }
 }
 createBoard()
 
+function flipCard() {
+
+}
 
 
 
