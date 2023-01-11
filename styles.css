@@ -1,6 +1,6 @@
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
-    height: 300px;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
   }
