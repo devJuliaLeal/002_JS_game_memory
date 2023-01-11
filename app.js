@@ -64,7 +64,7 @@ function createBoard () {
 createBoard()
 
 function flipCard() {
-
+ this.getAtribute('data-id')
 }
 
 
