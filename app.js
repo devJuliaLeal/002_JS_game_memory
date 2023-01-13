@@ -69,6 +69,13 @@ createBoard()
 
 function checkMatch () {
     console.log('check for match')
+    var cards= document.querySelectorAll('img')
+    const optionOneId = cardsChosenId[0]
+    const optionTwoId =cardsChosenId[0]
+    if (cardsChosen[0]) cardsChosen [1]{
+        alert('You found a match')
+        card [op]
+    }
 }
 
 function flipCard() {
