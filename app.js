@@ -39,6 +39,12 @@ cardData.forEach(item => {
     card.classList ='card';
     face.classList = 'face';
     back.classList = 'back'; 
+//attach the info to the cards
+face.src =item.imgSrc;
+//attach the cards to the section
+section.appendChild(card);
+card.appendChild(face);
+card.appendChild(back);
 
 });
 
