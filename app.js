@@ -13,7 +13,16 @@ const getData = () => [
 {imgSrc:"./documentos/img3-sword.gif", name: "sword"},
 {imgSrc:"./documentos/img4-duck.jpg", name: "duck"},
 {imgSrc:"./documentos/img5-catnana.jpg", name: "catnana"},
-{imgSrc:"./documentos/img6-flower.jpg", name: "flower"},
+{imgSrc:"./documentos/img6-sky.jpg", name: "sky"},
+{imgSrc:"./documentos/img7-candy.jpg", name: "candy"},
+{imgSrc:"./documentos/img1-annya.jpg", name: "annya"},
+{imgSrc:"./documentos/img2-jam.jpg", name: "jam"},
+{imgSrc:"./documentos/img3-sword.gif", name: "sword"},
+{imgSrc:"./documentos/img4-duck.jpg", name: "duck"},
+{imgSrc:"./documentos/img5-catnana.jpg", name: "catnana"},
+{imgSrc:"./documentos/img6-sky.jpg", name: "sky"},
+{imgSrc:"./documentos/img7-candy.jpg", name: "candy"},
+
 
 ];
 
