@@ -24,9 +24,14 @@ grid-gap: 5px;
 
 
 
-.face,.back {
-  width: 100%;
-  height: 100%;
+.face, .back {
+width: 100%;
+height: 100%;
+position: absolute;
+}
 
+.back {
+
+background: #ACE1AF;
 
 }
