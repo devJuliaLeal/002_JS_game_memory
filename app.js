@@ -1,6 +1,6 @@
 const section = document.querySelector('section');
 const playerLivesCount =document.querySelector('span');
-const playerLives = 6;
+let playerLives = 6;
 
 playerLivesCount.textContent = playerLives;
 
@@ -90,9 +90,10 @@ const checkCards =(e) => {
         console.log("wrong");
         flippedCards.forEach (card=> {
             card.classList.remove("flipped");
-        }
-            )
-
+            setTimeout(()=> card.classList.remove("toggleCard"),1000);
+        });
+        playerLives --;
+        playerLivesCount.textContent = playerLives;
         }
 
 
