@@ -23,8 +23,12 @@ section {
 display: grid;
 grid-template-columns:repeat(4,8rem) ;
 grid-template-rows:repeat(4,8rem) ;
-grid-gap: 5px;
+grid-gap: 10px;
 perspective: 800px;
+}
+
+.back{
+pointer-events: none;
 }
 
 .card

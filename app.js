@@ -56,15 +56,24 @@ face.src =item.imgSrc;
 section.appendChild(card);
 card.appendChild(face);
 card.appendChild(back);
-
 card.addEventListener('click', (e)=> {
     console.log(e);
-face.classList.toggle("toggleCard");
-card.classList.toggle("toggleCard");
+    face.classList.toggle("toggleCard");
+    card.classList.toggle("toggleCard");
+    checkCards(e);
+
 })
 
 });
 
 };
+
+//check cards
+
+constGenerator =(e) => {
+    const clickedCard = e.target;
+    console.log (clickedCard);
+}
+
 cardGenerator(); 
 
