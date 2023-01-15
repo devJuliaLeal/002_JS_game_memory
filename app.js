@@ -75,8 +75,30 @@ card.addEventListener('click', (e)=> {
 const checkCards =(e) => {
     console.log(e);
     const clickedCard = e.target;
-    console.log (clickedCard);
     clickedCard.classList.add("flipped");
+    const flippedCards = document.querySelectorAll(".flipped");
+    console.log(flippedCards);
+    //logic
+    if (flippedCards.lenght === 2) {
+        if (
+        flippedCards[0].getAttribute("name") ===
+        flippedCards[1].getAttribute("name")
+        ) {
+        console.log("match");
+        } 
+        else {
+        console.log("wrong");
+        flippedCards.forEach (card=> {
+            card.classList.remove("flipped");
+        }
+            )
+
+        }
+
+
+
+    }
+    
 }
 
 cardGenerator(); 
