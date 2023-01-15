@@ -25,6 +25,7 @@ grid-template-columns:repeat(4,8rem) ;
 grid-template-rows:repeat(4,8rem) ;
 grid-gap: 5px;
 perspective: 800px;
+backface-visibility: hidden;
 }
 
 .card
@@ -34,6 +35,13 @@ transform-style: preserve-3d;
 transition: all 2s cubic-bezier(0.175,0.885,0.32,1.275);
 box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
 
+
+}
+
+.back {
+
+  backface-visibility: hidden;
+ 
 }
 
 .face, .back {
@@ -43,11 +51,9 @@ position: absolute;
 
 }
 
-.back {
-  background: pink;
-  backface-visibility: hidden;
-}
-
 .toggleCard{
   transform: rotateY(180deg);
+  
+  
+
 }
