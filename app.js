@@ -58,6 +58,8 @@ card.appendChild(face);
 card.appendChild(back);
 
 card.addEventListener('click', (e)=> {
+    console.log(e);
+face.classList.toggle("toggleCard");
 card.classList.toggle("toggleCard");
 })
 
@@ -65,3 +67,4 @@ card.classList.toggle("toggleCard");
 
 };
 cardGenerator(); 
+

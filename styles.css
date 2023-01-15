@@ -4,10 +4,7 @@
   box-sizing: border-box;
   overflow: hidden;
 }
-body h1{
-  color:aliceblue;
-  margin-bottom: 10px;
-}
+
 
 body {
 height: 100vh;
@@ -24,8 +21,7 @@ display: grid;
 grid-template-columns:repeat(4,8rem) ;
 grid-template-rows:repeat(4,8rem) ;
 grid-gap: 5px;
-perspective: 800px;
-backface-visibility: hidden;
+
 }
 
 .card
@@ -40,8 +36,6 @@ box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
 
 .back {
 
-  backface-visibility: hidden;
- 
 }
 
 .face, .back {
