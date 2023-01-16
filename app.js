@@ -55,7 +55,7 @@ cardData.forEach(item => {
 face.src =item.imgSrc;
 card.setAttribute('name', item.name);
 //attach the cards to the section
-//section.appendChild(card);
+section.appendChild(card);
 card.appendChild(face);
 card.appendChild(back);
 card.addEventListener('click', (e)=> {
