@@ -79,7 +79,7 @@ const checkCards =(e) => {
     const flippedCards = document.querySelectorAll(".flipped");
     console.log(flippedCards);
     //logic
-    if (flippedCards.lenght === 2) {
+   // if (flippedCards.lenght === 2) {
         if (
         flippedCards[0].getAttribute("name") ===
         flippedCards[1].getAttribute("name")
