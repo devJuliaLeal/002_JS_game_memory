@@ -55,7 +55,7 @@ cardData.forEach(item => {
 face.src =item.imgSrc;
 card.setAttribute('name', item.name);
 //attach the cards to the section
-section.appendChild(card);
+//section.appendChild(card);
 card.appendChild(face);
 card.appendChild(back);
 card.addEventListener('click', (e)=> {
@@ -74,7 +74,7 @@ card.addEventListener('click', (e)=> {
 
 const checkCards =(e) => {
     console.log(e);
-    //const clickedCard = e.target;
+    const clickedCard = e.target;
     clickedCard.classList.add("flipped");
     const flippedCards = document.querySelectorAll(".flipped");
     console.log(flippedCards);
