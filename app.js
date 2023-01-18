@@ -60,11 +60,11 @@ cardData.forEach(item => {
     section.appendChild(card);
     card.appendChild(face);
     card.appendChild(back);
-
     card.addEventListener("click", (e)=> {
-
     back.classList.toggle("toggleCard");
     card.classList.toggle("toggleCard");
+    face.classList.toggle("toggleCard");
+    
     checkCards(e);
 
         })
@@ -76,34 +76,28 @@ cardData.forEach(item => {
 //check cards
 
 const checkCards =(e) => {
-    console.log(e);
+   console.log(e);
     const clickedCard = e.target;
     clickedCard.classList.add("flipped");
     const flippedCards = document.querySelectorAll(".flipped");
     console.log(flippedCards);
-    //logic
-    if (flippedCards.lenght === 2) {
-        if (
-        flippedCards[0].getAttribute("name") ===
-        flippedCards[1].getAttribute("name")
-        ) {
-        console.log("match");
-        } 
-        else {
-        console.log("wrong");
-        flippedCards.forEach (card=> {
-            card.classList.remove("flipped");
-            setTimeout(()=> card.classList.remove("toggleCard"),1000);
-        });
-        playerLives --;
-        playerLivesCount.textContent = playerLives;
-        }
+        if (flippedCards.length === 2) {
+            if (flippedCards[0].getAttribute("name") === 
+            flippedCards[1].getAttribute("name"));
+            console.log ("match");
+        };
 
 
 
-    }
+};
+
+        
+
+
+
     
-}
+    
+
 
 cardGenerator(); 
 
