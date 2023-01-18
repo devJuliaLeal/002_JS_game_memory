@@ -63,7 +63,7 @@ cardData.forEach(item => {
     card.addEventListener("click", (e)=> {
     back.classList.toggle("toggleCard");
     card.classList.toggle("toggleCard");
-    face.classList.toggle("toggleCard");
+
     
     checkCards(e);
 
@@ -78,14 +78,23 @@ cardData.forEach(item => {
 const checkCards =(e) => {
    console.log(e);
     const clickedCard = e.target;
+    console.log(clickedCard);
+
+
     clickedCard.classList.add("flipped");
     const flippedCards = document.querySelectorAll(".flipped");
     console.log(flippedCards);
         if (flippedCards.length === 2) {
-            if (flippedCards[0].getAttribute("name") === 
-            flippedCards[1].getAttribute("name"));
-            console.log ("match");
-        };
+            if (
+                flippedCards[0].getAttribute("name") === 
+                flippedCards[1].getAttribute("name")
+            ){
+                console.log ("match");
+            } else {
+                console.log("wrong");
+            }
+        }  
+
 
 
 
