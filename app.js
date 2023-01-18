@@ -36,7 +36,7 @@ cardData.sort(()=> Math.random() -0.5);
 return cardData;
 
 };
-//randomize(); 
+ 
 
 //card generator function
 
@@ -55,8 +55,8 @@ cardData.forEach(item => {
     back.classList = "back"; 
 //attach the info to the cards
     face.src =item.imgSrc;
-    card.setAttribute('name', item.name);
-    //attach the cards to the section
+    card.setAttribute("name", item.name);
+//attach the cards to the section
     section.appendChild(card);
     card.appendChild(face);
     card.appendChild(back);
