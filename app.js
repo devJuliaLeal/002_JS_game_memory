@@ -61,8 +61,7 @@ cardData.forEach((item) => {
     card.appendChild(face);
     card.appendChild(back);
     
-
-
+    const toggleCard = document.createAttribute("toggleCard");
     card.addEventListener("click", (e)=> {
     back.classList.toggle("toggleCard");
     card.classList.toggle("toggleCard");
@@ -92,6 +91,9 @@ const checkCards =(e) => {
                 flippedCards[1].getAttribute("name")
             ){
                 console.log ("match");
+                flippedCards.forEach((card) => {
+                    card.classList.remove("flipped");
+                })
 
             } else {
                 console.log("wrong");
