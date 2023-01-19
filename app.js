@@ -45,12 +45,12 @@ const cardGenerator = () => {
     
 // generate the HTML 
 
-cardData.forEach(item => {
+cardData.forEach((item) => {
    
     const card = document.createElement("div");
     const face = document.createElement("img");
     const back = document.createElement("div"); 
-    card.classList ="card";
+    card.classList = "card";
     face.classList = "face";
     back.classList = "back"; 
 //attach the info to the cards
@@ -76,27 +76,32 @@ cardData.forEach(item => {
 //check cards
 
 const checkCards =(e) => {
-   console.log(e);
+    console.log(e);
     const clickedCard = e.target;
-    console.log(clickedCard);
-
-
     clickedCard.classList.add("flipped");
     const flippedCards = document.querySelectorAll(".flipped");
     console.log(flippedCards);
+    
+    
         if (flippedCards.length === 2) {
             if (
                 flippedCards[0].getAttribute("name") === 
                 flippedCards[1].getAttribute("name")
             ){
                 console.log ("match");
+
             } else {
                 console.log("wrong");
+                flippedCards.forEach((card) => {
+                    card.classList.remove("flipped");
+                   setTimeout(() => card.classList.remove("toggleCard"), 1000);
+                   
+                })
             }
         }  
 
 
-
+       
 
 };
 
