@@ -60,10 +60,13 @@ cardData.forEach((item) => {
     section.appendChild(card);
     card.appendChild(face);
     card.appendChild(back);
+    
+
+
     card.addEventListener("click", (e)=> {
     back.classList.toggle("toggleCard");
     card.classList.toggle("toggleCard");
-
+    
     
     checkCards(e);
 
@@ -95,7 +98,7 @@ const checkCards =(e) => {
                 flippedCards.forEach((card) => {
                     card.classList.remove("flipped");
                    setTimeout(() => card.classList.remove("toggleCard"), 1000);
-                   
+                  
                 })
             }
         }  
@@ -104,14 +107,6 @@ const checkCards =(e) => {
        
 
 };
-
-        
-
-
-
-    
-    
-
 
 cardGenerator(); 
 
